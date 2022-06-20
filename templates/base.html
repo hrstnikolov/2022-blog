@@ -7,11 +7,13 @@
     </head>
     <body>
         <header>
-            <h1><a href="{% url 'home' %}">Django home</a></h1>
-        </header>
+            <div class="nav-left">
+                <h1><a href="{% url 'home' %}">Django home</a></h1>
+            </div>
         <div class="nav-right">
             <a href="{% url 'post_new' %}">+ New Blog Post</a>
         </div>
+        </header>
         <div>
             {% block content %}
             {% endblock content %}
